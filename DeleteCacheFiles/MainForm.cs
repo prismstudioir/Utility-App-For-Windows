@@ -24,7 +24,11 @@ namespace DeleteCacheFiles
                     {
                         try
                         {
-                            Directory.Delete(sr, true);
+                            if (Directory.Exists(sr))
+                            {
+                                Directory.Delete(sr, true);
+                            }
+                            Directory.CreateDirectory(sr);
                         }
                         catch
                         {
