@@ -127,6 +127,7 @@ namespace Rename_Files_And_Folders
             this.MaximumSize = new System.Drawing.Size(700, 170);
             this.MinimumSize = new System.Drawing.Size(700, 170);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Replace All Folders Name Or Files Name In Directory";
             this.ResumeLayout(false);
             this.PerformLayout();
