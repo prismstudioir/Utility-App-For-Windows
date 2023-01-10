@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rename Files And Folders", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteCacheFiles", "DeleteCacheFiles\DeleteCacheFiles.csproj", "{F3088DE4-07C9-45DD-B028-D02C58CA732A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persian Subtitle Fixer", "Persian Subtitle Fixer\Persian Subtitle Fixer.csproj", "{B6CE8DE6-71AC-44AC-9EFB-E9AABD8EE9A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F3088DE4-07C9-45DD-B028-D02C58CA732A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3088DE4-07C9-45DD-B028-D02C58CA732A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3088DE4-07C9-45DD-B028-D02C58CA732A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6CE8DE6-71AC-44AC-9EFB-E9AABD8EE9A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6CE8DE6-71AC-44AC-9EFB-E9AABD8EE9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6CE8DE6-71AC-44AC-9EFB-E9AABD8EE9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6CE8DE6-71AC-44AC-9EFB-E9AABD8EE9A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
