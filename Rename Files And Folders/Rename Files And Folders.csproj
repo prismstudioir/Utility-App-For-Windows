@@ -5,6 +5,7 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>Rename_Files_And_Folders</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Resources\Folder.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
