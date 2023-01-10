@@ -1,12 +1,7 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using System.Text.Encodings;
-using System.Text.Encodings.Web;
 
 namespace Persian_Subtitle_Fixer
 {
@@ -44,7 +39,7 @@ namespace Persian_Subtitle_Fixer
                 }
                 else
                 {
-                    int num1 = (int)MessageBox.Show(@"Unknown file type!");
+                    MessageBox.Show(@"Unknown file type!");
                 }
             }
             
