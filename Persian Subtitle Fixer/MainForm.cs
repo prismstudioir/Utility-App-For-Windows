@@ -16,8 +16,19 @@ namespace Persian_Subtitle_Fixer
         {
             string[] data = (string[])e.Data.GetData(DataFormats.FileDrop);
 
+            string newpath = "";
             foreach (var subfile in data)
             {
+                try
+                {
+                    newpath = Path.GetDirectoryName(subfile)+@"/Edited/";
+                    if (newpath != null) Directory.CreateDirectory(newpath);
+                }
+                catch (Exception exception)
+                {
+                    // ignored
+                }
+
                 string filetype = Path.GetExtension(subfile);
                 if (filetype == ".srt" || filetype == ".ass")
                 {
@@ -28,7 +39,8 @@ namespace Persian_Subtitle_Fixer
                         string end = streamReader.ReadToEnd();
                         streamReader.Close();
                         StreamWriter streamWriter = new StreamWriter(
-                            subfile.Substring(0, subfile.Length - 4) + ".edited" + filetype, false, Encoding.UTF8);
+                            newpath + Path.GetFileName(subfile), false,
+                            Encoding.UTF8);
                         streamWriter.Write(end);
                         streamWriter.Close();
                     }
@@ -42,7 +54,7 @@ namespace Persian_Subtitle_Fixer
                     MessageBox.Show(@"Unknown file type!");
                 }
             }
-            
+
 
         }
 
