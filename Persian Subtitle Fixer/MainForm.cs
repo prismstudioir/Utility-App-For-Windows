@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
@@ -68,6 +70,23 @@ namespace Persian_Subtitle_Fixer
         private void MainForm_Load(object sender, EventArgs e)
         {
             this.AllowDrop = true;
+            this.Paint += new PaintEventHandler(Set_Background);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Set_Background(Object sender, PaintEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+
+            Rectangle gradientRectangle = new Rectangle(0, 0, Width, Height);
+
+            Brush b = new LinearGradientBrush(gradientRectangle, Color.FromArgb(30, 214, 217), Color.FromArgb(15, 161, 163), 65f);
+
+            graphics.FillRectangle(b, gradientRectangle);
         }
     }
 }
